@@ -1,0 +1,67 @@
+Project: Gmail Spam Classifier
+
+Description:
+Machine learning application that classifies emails as Spam or Ham using Natural Language Processing techniques.
+
+Technologies:
+Python, Scikit-Learn, NLTK, Pandas, NumPy, Streamlit
+
+Features:
+- Gmail Integration
+- Spam Detection
+- Email Analysis Dashboard
+- Sender Statistics
+- Dark and Light Theme Support
+
+--------------------------------------------------
+
+Project: AI PDF Intelligence Chatbot
+
+Description:
+An AI-powered chatbot that allows users to upload PDF documents and ask questions about their content using Retrieval-Augmented Generation (RAG).
+
+Technologies:
+Python, Streamlit, LangChain, FAISS, Gemini API
+
+Features:
+- PDF Upload
+- Document Summarization
+- Question Answering
+- Semantic Search
+- Conversational Interface
+
+--------------------------------------------------
+
+Project: RecyclerAI Smart Waste Classification System
+
+Description:
+Deep learning image classification system that automatically categorizes waste into recyclable, non-recyclable, hazardous, and organic categories.
+
+Technologies:
+Python, TensorFlow, Keras, NumPy, Matplotlib
+
+Features:
+- Image Upload
+- Waste Classification
+- Confidence Scores
+- Prediction Dashboard
+- Visualization Charts
+
+--------------------------------------------------
+
+Project: AI Portfolio Operating System (NandanOS)
+
+Description:
+An interactive desktop-style portfolio designed to showcase my projects, skills, certifications, resume, and achievements through a modern operating system inspired interface.
+
+Purpose:
+Created as a personal portfolio to present my Data Science, Machine Learning, AI, and Analytics projects in an engaging and interactive way.
+
+Features:
+- Desktop-style interface
+- AI Assistant
+- Project Explorer
+- Resume Viewer
+- Skills Dashboard
+- Certifications Gallery
+- Contact Hub

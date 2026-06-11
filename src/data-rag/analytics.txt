@@ -1,0 +1,20 @@
+Analytics and Data Visualization Skills
+
+Tools:
+- Tableau
+
+Capabilities:
+- Dashboard Creation
+- KPI Monitoring
+- Business Insights
+- Interactive Reports
+- Data Visualization
+
+Experience:
+Created analytical dashboards for academic projects and portfolio applications using Tableau and Power BI.
+
+Focus Areas:
+- Descriptive Analytics
+- Exploratory Data Analysis
+- Data Storytelling
+- Visualization Best Practices

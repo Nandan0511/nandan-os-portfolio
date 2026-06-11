@@ -1,0 +1,17 @@
+Certifications
+
+Category:
+Machine Learning
+
+Topics:
+- Machine Learning Fundamentals
+- Deep Learning
+- Data Analytics
+- Artificial Intelligence
+- Python Programming
+- SQL
+- Generative AI
+
+The certification section contains certificates earned from universities, online learning platforms, and professional training programs.
+
+Users can open the Certifications application to view all certificates individually.

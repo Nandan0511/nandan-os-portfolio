@@ -1,0 +1,9 @@
+Name: Nandan Patel
+
+I am a Computer Science and Engineering (Data Science) student at Vishwakarma Government Engineering College, Ahmedabad.
+
+My primary interests are Data Science, Machine Learning, Artificial Intelligence, Data Analytics, and Generative AI.
+
+I enjoy building practical AI applications that solve real-world problems. My projects include Gmail Spam Classification, PDF Intelligence Chatbot using RAG, Smart Waste Classification using Deep Learning, and an AI-powered Portfolio Operating System.
+
+My goal is to become an AI and Data Science Engineer and contribute to intelligent systems that create meaningful impact.

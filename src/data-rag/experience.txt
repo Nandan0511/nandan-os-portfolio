@@ -1,0 +1,20 @@
+Experience
+
+Currently focused on academic projects, self-learning, and hands-on development in Data Science, Machine Learning, Artificial Intelligence, and Analytics.
+
+Built multiple end-to-end projects including:
+
+- Gmail Spam Classifier
+- AI PDF Intelligence Chatbot
+- RecyclerAI Smart Waste Classification System
+- AI Portfolio Operating System
+
+Actively learning:
+- Advanced Machine Learning
+- Deep Learning
+- Generative AI
+- Retrieval-Augmented Generation (RAG)
+- Data Engineering Concepts
+
+Career Goal:
+Become an AI and Data Science Engineer specializing in intelligent systems and machine learning applications.

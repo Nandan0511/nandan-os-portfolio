@@ -1,0 +1,49 @@
+Technical Skills
+
+Programming Languages:
+- Python
+- SQL
+- C
+- Java
+
+Data Science:
+- Data Cleaning
+- Data Preprocessing
+- Exploratory Data Analysis
+- Feature Engineering
+- Model Evaluation
+
+Machine Learning:
+- Classification
+- Regression
+- Model Training
+- Hyperparameter Tuning
+
+Deep Learning:
+- TensorFlow
+- Keras
+- Convolutional Neural Networks
+
+Data Analytics:
+- Tableau
+- Power BI
+- Excel
+
+Libraries:
+- Pandas
+- NumPy
+- Scikit-Learn
+- Matplotlib
+- Seaborn
+
+Generative AI:
+- LangChain
+- RAG Systems
+- Vector Databases
+- Prompt Engineering
+
+Tools:
+- Git
+- GitHub
+- VS Code
+- Streamlit

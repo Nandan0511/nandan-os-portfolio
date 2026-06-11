@@ -1,0 +1,33 @@
+name: NandanOS CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/allowed-actions/setup-node@v4
+      with:
+        node-version: 20
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run Linter
+      run: npm run lint
+
+    - name: Check TypeScript Compilation
+      run: npx tsc --noEmit
+
+    - name: Build Application
+      run: npm run build
