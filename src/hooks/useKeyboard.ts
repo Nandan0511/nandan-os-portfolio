@@ -16,7 +16,8 @@ export function useKeyboard(bindings: KeyboardBindings) {
       if (e.altKey) keysPressed.push('alt');
       if (e.metaKey) keysPressed.push('meta');
 
-      const primaryKey = e.key.toLowerCase();
+      const primaryKey = e.key?.toLowerCase();
+      if(!primaryKey) return;
       if (!['control', 'shift', 'alt', 'meta'].includes(primaryKey)) {
         keysPressed.push(primaryKey);
       }

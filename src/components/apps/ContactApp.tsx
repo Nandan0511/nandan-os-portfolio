@@ -15,7 +15,7 @@ import { Label } from '@/components/ui/label';
 import { sanitizeInput, sanitizeEmail } from '@/utils/sanitize';
 import * as Lucide from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-
+import emailjs from '@emailjs/browser';
 export function ContactApp() {
   const { isMobile } = useOS();
   const [formState, setFormState] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
@@ -35,25 +35,39 @@ export function ContactApp() {
     }
   });
 
-  const onSubmit = async (data: ContactFormData) => {
-    setFormState('loading');
-    
-    // Sanitize inputs
-    const sanitizedData = {
-      name: sanitizeInput(data.name),
-      email: sanitizeEmail(data.email),
-      subject: sanitizeInput(data.subject),
-      message: sanitizeInput(data.message)
-    };
 
-    console.log('Sending contact data (sanitized):', sanitizedData);
 
-    // Simulate network submission delay
-    setTimeout(() => {
-      setFormState('success');
-      reset();
-    }, 1500);
+const onSubmit = async (data: ContactFormData) => {
+  setFormState('loading');
+
+  const sanitizedData = {
+    name: sanitizeInput(data.name),
+    email: sanitizeEmail(data.email),
+    subject: sanitizeInput(data.subject),
+    message: sanitizeInput(data.message)
   };
+
+  try {
+    await emailjs.send(
+      'service_bqql0th',
+      'template_6026vuy',
+      {
+        from_name: sanitizedData.name,
+        from_email: sanitizedData.email,
+        subject: sanitizedData.subject,
+        message: sanitizedData.message,
+      },
+      '1nQ9Riza9y_N7KVKk'
+    );
+
+    setFormState('success');
+    reset();
+
+  } catch (error) {
+    console.error(error);
+    setFormState('error');
+  }
+};
 
   return (
     <ScrollArea className="h-full w-full text-white bg-black/10">
