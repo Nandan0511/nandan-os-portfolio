@@ -49,15 +49,15 @@ const onSubmit = async (data: ContactFormData) => {
 
   try {
     await emailjs.send(
-      'service_bqql0th',
-      'template_6026vuy',
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
       {
         from_name: sanitizedData.name,
         from_email: sanitizedData.email,
         subject: sanitizedData.subject,
         message: sanitizedData.message,
       },
-      '1nQ9Riza9y_N7KVKk'
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
     );
 
     setFormState('success');
