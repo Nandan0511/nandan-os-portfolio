@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://nandanos.vercel.app'),
+  metadataBase: new URL('https://nandan-os-portfolio.vercel.app'),
 
   title: 'NandanOS — Nandan Patel | Data Science Portfolio',
   description:
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'NandanOS — Nandan Patel Portfolio',
     description:
       'Data Science & AI undergraduate student portfolio styled as a futuristic web operating system.',
-    url: 'https://nandanos.vercel.app',
+    url: 'https://nandan-os-portfolio.vercel.app',
     siteName: 'NandanOS',
     images: [
       {
