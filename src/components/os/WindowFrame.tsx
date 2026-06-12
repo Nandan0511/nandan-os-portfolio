@@ -42,7 +42,7 @@ export function WindowFrame({ window: win, children }: WindowFrameProps) {
   });
 
   // Initialize resizing hook
-  const { isResizing, startResize } = useResize({
+  const { startResize } = useResize({
     elementRef: frameRef,
     initialSize: win.size,
     minSize: win.minSize,
@@ -119,12 +119,12 @@ export function WindowFrame({ window: win, children }: WindowFrameProps) {
         className="h-10 bg-black/40 border-b border-white/5 flex items-center justify-between px-3 select-none flex-shrink-0"
       >
         {/* Left Side: macOS-styled colored control circles */}
-        <div className="flex items-center gap-1.5 w-16">
+        <div className="flex items-center gap-2 w-20">
           {/* Close */}
           <button
             onClick={() => closeWindow(win.id)}
 
-            className="group h-3 w-3 rounded-full bg-red-500 hover:bg-red-400 flex items-center justify-center text-[7px] text-red-950 font-bold border border-red-600/40 cursor-pointer"
+            className="group h-4 w-4 rounded-full bg-red-500 hover:bg-red-400 flex items-center justify-center text-[7px] text-red-950 font-bold border border-red-600/40 cursor-pointer"
             aria-label="Close window"
           >
             <span className="opacity-0 group-hover:opacity-100">×</span>
@@ -133,7 +133,7 @@ export function WindowFrame({ window: win, children }: WindowFrameProps) {
           {/* Minimize */}
           <button
             onClick={() => minimizeWindow(win.id)}
-            className="group h-3 w-3 rounded-full bg-yellow-500 hover:bg-yellow-400 flex items-center justify-center text-[7px] text-yellow-950 font-bold border border-yellow-600/40 cursor-pointer"
+            className="group h-4 w-4 rounded-full bg-yellow-500 hover:bg-yellow-400 flex items-center justify-center text-[7px] text-yellow-950 font-bold border border-yellow-600/40 cursor-pointer"
             aria-label="Minimize window"
           >
             <span className="opacity-0 group-hover:opacity-100">-</span>
@@ -145,7 +145,7 @@ export function WindowFrame({ window: win, children }: WindowFrameProps) {
               if (win.isMaximized) restoreWindow(win.id);
               else maximizeWindow(win.id);
             }}
-            className="group h-3 w-3 rounded-full bg-green-500 hover:bg-green-400 flex items-center justify-center text-[5px] text-green-950 font-bold border border-green-600/40 cursor-pointer"
+            className="group h-4 w-4 rounded-full bg-green-500 hover:bg-green-400 flex items-center justify-center text-[5px] text-green-950 font-bold border border-green-600/40 cursor-pointer"
             aria-label={win.isMaximized ? "Restore window" : "Maximize window"}
           >
             <span className="opacity-0 group-hover:opacity-100">
