@@ -97,5 +97,29 @@ export const projects: Project[] = [
   status: 'completed',
   featured: true,
   date: '2025-05'
+},
+{
+id: 'customer-churn-retention-analytics',
+title: 'Customer Churn Retention Analytics',
+description: 'An AI-powered customer churn prediction and retention intelligence platform that identifies at-risk telecom customers, explains churn drivers using Explainable AI, and generates actionable business recommendations.',
+category: 'machine-learning',
+overview: 'Customer Churn Retention Analytics combines machine learning, explainable AI, and generative AI to help telecom businesses proactively reduce customer attrition. The platform predicts churn probability, identifies key risk factors using SHAP explanations, estimates revenue risk, segments customers, and generates executive-level retention strategies for both individual and batch predictions.',
+problem: 'Customer churn directly impacts revenue and customer lifetime value. Telecom companies often struggle to identify at-risk customers early and lack actionable insights into the underlying reasons for customer attrition.',
+solution: 'Developed an end-to-end churn intelligence platform using XGBoost and Scikit-Learn pipelines. Implemented customer-level churn prediction, SHAP-based explainability, revenue risk estimation, customer segmentation, batch prediction analysis, AI-generated retention recommendations, executive business reports, and PDF export functionality through an interactive Streamlit dashboard.',
+architecture: 'Customer Data -> Data Preprocessing Pipeline -> Feature Engineering -> XGBoost Churn Model -> Churn Probability Prediction -> SHAP Explainability Engine -> Customer Segmentation & Revenue Risk Analysis -> AI Retention Recommendations -> Executive Dashboard & PDF Reports.',
+workflow: '1. Customer attributes are processed through a preprocessing pipeline.\n2. The trained XGBoost model predicts churn probability.\n3. SHAP generates feature-level explanations for individual predictions.\n4. Customers are categorized into risk levels and business segments.\n5. Revenue impact is estimated based on churn probability.\n6. AI generates personalized retention strategies.\n7. Batch predictions create executive-level business reports and downloadable PDF summaries.',
+dataset: 'IBM Telco Customer Churn Dataset containing customer demographics, account information, service subscriptions, contract details, tenure, and billing information.',
+techStack: ['Python', 'Scikit-Learn', 'XGBoost', 'SHAP', 'Pandas', 'NumPy', 'Matplotlib', 'OpenAI API', 'ReportLab', 'Streamlit'],
+results: 'Achieved high predictive performance using XGBoost while providing transparent model explanations through SHAP. Enabled business users to identify high-risk customers, estimate potential revenue loss, and generate actionable retention strategies in real time.',
+challenges: 'Handling categorical feature encoding, maintaining model explainability, ensuring compatibility across deployment environments, generating meaningful AI-driven business recommendations, and integrating SHAP visualizations with production-ready workflows.',
+lessonsLearned: 'Explainability is as important as prediction accuracy in business applications. Combining machine learning with AI-generated insights significantly improves stakeholder adoption and decision-making capabilities.',
+futureImprovements: 'Integrate real-time CRM data sources, implement automated retention campaign triggers, add customer lifetime value forecasting, deploy multi-model ensembles, and build role-based enterprise analytics dashboards.',
+githubUrl: 'https://github.com/Nandan0511/customer-churn-retention-analytics',
+liveUrl: 'https://customer-churn-retention-analytics.streamlit.app/',
+image: '/customer-churn-dashboard.png',
+status: 'completed',
+featured: true,
+date: '2026-06'
 }
+
 ];
