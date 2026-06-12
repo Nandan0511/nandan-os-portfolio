@@ -80,8 +80,8 @@ export function WindowFrame({ window: win, children }: WindowFrameProps) {
     ? {
         left: 0,
         top: 0,
-        width: '100vw',
-        height: 'calc(100vh - 48px)', // Minus taskbar
+        width: '100%',
+        height: 'calc(100dvh - 48px)', // Minus taskbar
         borderRadius: 0,
         borderWidth: 0,
         zIndex: win.zIndex

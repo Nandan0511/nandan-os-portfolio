@@ -241,7 +241,7 @@ if (action) {
       )}
 
       {/* Input container */}
-      <div className="border-t border-white/10 p-3 bg-black/20 flex items-center gap-2 flex-shrink-0">
+      <div className="border-t border-white/10 p-3 bg-black/20 flex items-center gap-2 flex-shrink-0 sticky bottom-0">
         <Input
           placeholder="Ask me something about Nandan..."
           value={inputValue}
@@ -249,7 +249,7 @@ if (action) {
           onKeyDown={(e) => {
             if (e.key === 'Enter') handleSend(inputValue);
           }}
-          className="bg-white/5 border-white/10 text-white placeholder-slate-500 focus-visible:ring-blue-500/50 text-xs sm:text-sm"
+          className="bg-white/5 border-white/10 text-white placeholder-slate-500 focus-visible:ring-blue-500/50 text-base"
         />
         <Button
           onClick={() => handleSend(inputValue)}
